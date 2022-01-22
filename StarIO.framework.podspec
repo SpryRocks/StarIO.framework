@@ -7,5 +7,5 @@ s.homepage         = 'https://github.com/SpryRocks/StarIO.framework'
 s.author           = { 'username' => 'dummyuser@abc.com' }
 s.source           = { :git => 'https://github.com/SpryRocks/StarIO.framework.git', :tag => s.version.to_s }
 s.ios.deployment_target = '10.0'
-s.source_files = 'src/*'
+s.source_files = 'src/**/*'
 end
