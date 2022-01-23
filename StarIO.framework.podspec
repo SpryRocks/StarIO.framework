@@ -7,6 +7,11 @@ s.homepage         = 'https://github.com/SpryRocks/StarIO.framework'
 s.author           = { 'username' => 'dummyuser@abc.com' }
 s.source           = { :git => 'https://github.com/SpryRocks/StarIO.framework.git', :tag => s.version.to_s }
 s.ios.deployment_target = '10.0'
-s.source_files = 'StarIO', 'Headers/**/*.h'
-s.preserve_paths = ['Headers/**/*']
+s.source_files = 'StarIO', 'Headers/*.h'
+
+s.subspec 'starmicronics' do |ss|
+    ss.source_files = 'Headers/starmicronics'
+#     ss.frameworks = 'frameworks'
+end
+
 end
