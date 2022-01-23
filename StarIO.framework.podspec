@@ -12,6 +12,9 @@ s.source_files = 'StarIO', 'Headers/*.h'
 s.subspec 'starmicronics' do |ss|
     ss.source_files = 'Headers/starmicronics'
 #     ss.frameworks = 'frameworks'
+    ss.subspec 'platform' do |sss|
+        sss.source_files = 'Headers/starmicronics/platform'
+    end
 end
 
 end
